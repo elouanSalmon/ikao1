@@ -1,0 +1,1547 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Medium.ttf") format("ttf"), url("../font/Montserrat/Montserrat-Black.ttf") format("ttf"), url("../font/Montserrat/Montserrat-BlackItalic.ttf") format("ttf"), url("../font/Montserrat/Montserrat-Bold.ttf") format("ttf"), url("../font/Montserrat/Montserrat-Italic.ttf") format("ttf"), url("../font/Montserrat/Montserrat-Light.ttf") format("ttf");
+}
+
+div, p, a, h1, h2, h3 {
+  /*Mettre du Montserrat à la place*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pDark {
+  color: #0e0e0e;
+}
+
+.pDarkGrey {
+  color: #414141;
+}
+
+.pWhite {
+  color: aliceblue;
+}
+
+.pGrey {
+  color: #9b9b9b;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  color: aliceblue;
+  opacity: 80%;
+  font-size: 1rem;
+}
+
+.p1 {
+  font-size: 1.6rem;
+}
+
+.p2 {
+  font-size: 1.4rem;
+}
+
+.p3 {
+  font-size: 1rem;
+}
+
+.padding {
+  padding: 1rem;
+}
+
+.mediumPadding {
+  padding: 1.5rem;
+}
+
+.bigPadding {
+  padding: 2rem;
+}
+
+.littleIcon {
+  font-size: 1.4rem;
+}
+
+.bigIcon {
+  font-size: 2rem;
+}
+
+.fatIcon {
+  font-size: 3rem;
+}
+
+i {
+  display: inline;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a :hover {
+  text-decoration: none;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.4rem;
+}
+
+.pastPrice {
+  text-decoration: line-through;
+}
+
+.bubbleReduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #01d8d8;
+}
+
+.img {
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+
+.global {
+  width: auto;
+  height: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.preHeader {
+  background-color: #0e0e0e;
+  color: aliceblue;
+}
+
+.preHeader .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preHeader .container a {
+  color: aliceblue;
+  padding: auto;
+  margin: 0.2rem;
+}
+
+.preHeader .container a :hover {
+  background-color: #414141;
+}
+
+.preHeader .container .preHeader-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preHeader .container .preHeader-contact .preHeader-contact-phone {
+  background-color: #414141;
+}
+
+.preHeader .container .preHeader-contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preHeader-account {
+  background-color: #414141;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header, .homepage {
+  background-color: aliceblue;
+}
+
+.header .container, .homepage .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo-mobile, .homepage .logo-mobile {
+  display: none;
+}
+
+.header-logo1 {
+  width: 10rem;
+}
+
+.header-logo1 img {
+  width: 100%;
+}
+
+.header-search a {
+  color: #414141;
+}
+
+.header-search a :hover {
+  color: #414141;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar-nav li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-nav li a {
+  color: #0e0e0e;
+}
+
+.navbar-nav li a :hover {
+  color: #0e0e0e;
+}
+
+.header-shoppingCart a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 0.25;
+  color: #414141;
+}
+
+.header-shoppingCart a :hover {
+  color: #414141;
+}
+
+.header-shoppingCart a p {
+  display: inline;
+}
+
+.header-search #inputSearch {
+  display: none;
+}
+
+/*homepage*/
+.homepage .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*grid*/
+.homepage-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+      grid-template-areas: "newCollection newCollection  sofa  banc"  "newCollection newCollection sofa whiteChair"  "greyChair tabouret tabouret  tabouret"  "totemFloor tabouret tabouret  tabouret";
+  -ms-grid-columns: 33fr 17fr 25fr 25fr;
+      grid-template-columns: 33fr 17fr 25fr 25fr;
+}
+
+.grid-newCollection {
+  background-image: url("../img/images/meubles/nouvellecollection.jpg");
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: newCollection;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: aliceblue;
+}
+
+.grid-sofa {
+  background-image: url("../img/images/meubles/canape3places.jpg");
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: sofa;
+  color: aliceblue;
+}
+
+.grid-banc {
+  background-image: url("../img/images/meubles/coussinsblancs.jpg");
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: banc;
+  color: #0e0e0e;
+}
+
+.grid-banc .price {
+  color: #8b0101;
+}
+
+.grid-banc .pushToAction {
+  color: aliceblue;
+  background-color: #0e0e0e;
+}
+
+.grid-whiteChair {
+  background-image: url("../img/images/meubles/chaise-accourdoirs.jpg");
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: whiteChair;
+  color: #0e0e0e;
+}
+
+.grid-greyChair {
+  background-image: url("../img/images/meubles/ziodinning.jpg");
+  background-color: aquamarine;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: greyChair;
+  color: aliceblue;
+}
+
+.grid-greyChair a {
+  color: aliceblue;
+}
+
+.grid-greyChair a :hover {
+  color: aliceblue;
+}
+
+.grid-totemFloor {
+  background-image: url("../img/images/meubles/totemfloor.jpg");
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: totemFloor;
+  color: #9b9b9b;
+}
+
+.grid-totemFloor .pushToAction {
+  color: #9b9b9b;
+}
+
+.grid-tabouret {
+  background-image: url("../img/images/meubles/tabouret.jpg");
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: tabouret;
+  color: #9b9b9b;
+}
+
+/*finish grid*/
+.homepage-product-menu {
+  padding: 1.5rem;
+}
+
+.homepage-product-menu a {
+  color: #414141;
+  margin: 1rem;
+}
+
+.homepage-product-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.homepage-product-cards div {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  height: 50%;
+}
+
+.homepage-product-cards div figure {
+  margin: 0px;
+  /*
+            text-align: center;
+            padding: none;
+            width: 100%;
+            height: 100%;
+            */
+}
+
+.homepage-product-cards div figure img {
+  top: 0px;
+  left: 0px;
+  margin: none;
+  padding: none;
+  width: 100%;
+  height: 17.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homepage-product-cards div figcaption {
+  margin: 1rem 0 1rem 0;
+}
+
+.homepage-product-cards div figcaption a {
+  display: block;
+  color: #9b9b9b;
+}
+
+.homepage-product-cards div figcaption .price {
+  color: #414141;
+}
+
+.homepage-category {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "horloge palette lampe";
+  -ms-grid-columns: 33.33fr 33.33fr 33.33fr;
+      grid-template-columns: 33.33fr 33.33fr 33.33fr;
+  grid-auto-rows: 20rem;
+}
+
+.homepage-category .palette {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: palette;
+  height: 4000px;
+}
+
+.homepage-category .horloge {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: horloge;
+}
+
+.homepage-category .lampe {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: lampe;
+}
+
+.homepage-bestDeals {
+  width: 100%;
+}
+
+.homepage-bestDeals-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage-bestDeals-cards div {
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
+}
+
+.homepage-bestDeals-cards div .img {
+  width: 100%;
+  height: 200px;
+}
+
+.homepage-bestDeals-cards .productListAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+}
+
+.homepage-bestDeals-cards .productListAction a {
+  color: #414141;
+}
+
+.homepage-brands {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.homepage-brands h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.homepage-brands-logos {
+  margin: 1.5rem 0 1.5rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*footer*/
+.footer {
+  background-color: #d1d1d1;
+}
+
+.footer .container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "reassurance reassurance  reassurance" "contact sitemap newsletter" "contact sitemap social";
+  -ms-grid-columns: 25fr 50fr 25fr;
+      grid-template-columns: 25fr 50fr 25fr;
+}
+
+.footer-reassurance {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: reassurance;
+  margin: 1rem 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-reassurance .footer-reassurance-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-reassurance .footer-reassurance-cards div {
+  text-align: center;
+}
+
+.footer-reassurance .footer-reassurance-cards h3, .footer-reassurance .footer-reassurance-cards h1, .footer-reassurance .footer-reassurance-cards h2 {
+  font-size: 1rem;
+}
+
+.footer-reassurance .footer-reassurance-cards p {
+  font-size: 0.8rem;
+}
+
+.footer-contact {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: contact;
+}
+
+.footer-contact a {
+  color: #9b9b9b;
+}
+
+.footer-contact a :hover {
+  color: #414141;
+}
+
+.footer-sitemap {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: sitemap;
+  margin: 0 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-sitemap li a {
+  color: #9b9b9b;
+}
+
+.footer-sitemap li a :hover {
+  color: #414141;
+}
+
+.footer-sitemap-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-sitemap-child h1, .footer-sitemap-child ul {
+  display: inline-block;
+}
+
+.footer-newsletter {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: newsletter;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social span {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: social;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer-social h1 {
+  text-align: right;
+}
+
+.subFooter .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subFooter-payMethod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*tailles d'écran inférieur à 991px*/
+@media (max-width: 991px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75%;
+    height: auto;
+    margin: auto;
+  }
+  .global {
+    width: auto;
+    height: auto;
+    padding: 0 3% 0 3%;
+  }
+  .header .container, .homepage .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .header .logo-mobile, .homepage .logo-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-logo1 {
+    display: none;
+  }
+  .header-search a {
+    color: #414141;
+  }
+  .header-search a :hover {
+    color: #414141;
+  }
+  .header-search #inputSearch {
+    display: none;
+  }
+  /*homepage*/
+  /*grid*/
+  .homepage-grid {
+        grid-template-areas: "newCollection newCollection"  "tabouret sofa "  "whiteChair  banc"  "totemFloor greyChair";
+    -ms-grid-columns: 50fr 50fr;
+        grid-template-columns: 50fr 50fr;
+  }
+  .grid-newCollection {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: newCollection;
+  }
+  .grid-sofa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: sofa;
+  }
+  .grid-banc {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: banc;
+  }
+  .grid-whiteChair {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: whiteChair;
+  }
+  .grid-greyChair {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: greyChair;
+  }
+  .grid-totemFloor {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: totemFloor;
+  }
+  .grid-tabouret {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: tabouret;
+  }
+  /*finish grid*/
+  .homepage-product-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.5rem;
+  }
+  .homepage-product-menu a {
+    color: #414141;
+    margin: 1rem;
+  }
+  .homepage-product-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .homepage-product-cards div {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    height: 50%;
+  }
+  .homepage-product-cards div figure {
+    margin: 0px;
+    /*
+                text-align: center;
+                padding: none;
+                width: 100%;
+                height: 100%;
+                */
+  }
+  .homepage-product-cards div figure img {
+    top: 0px;
+    left: 0px;
+    margin: none;
+    padding: none;
+    width: 100%;
+    height: 17.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homepage-product-cards div figcaption {
+    margin: 1rem 0 1rem 0;
+  }
+  .homepage-product-cards div figcaption a {
+    display: block;
+    color: #9b9b9b;
+  }
+  .homepage-product-cards div figcaption .price {
+    color: #414141;
+  }
+  .homepage-category {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+        grid-template-areas: "horloge horloge" "palette lampe";
+    -ms-grid-columns: 50fr 50fr;
+        grid-template-columns: 50fr 50fr;
+    -ms-grid-rows: 50fr 50fr;
+        grid-template-rows: 50fr 50fr;
+    grid-auto-rows: 20rem;
+  }
+  .homepage-category .palette {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: palette;
+  }
+  .homepage-category .horloge {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: horloge;
+  }
+  .homepage-category .lampe {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: lampe;
+  }
+  .homepage-bestDeals {
+    width: 100%;
+  }
+  .homepage-bestDeals-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage-bestDeals-cards div {
+    -ms-flex-preferred-size: 18%;
+        flex-basis: 18%;
+  }
+  .homepage-bestDeals-cards div .img {
+    width: 100%;
+    height: 200px;
+  }
+  .homepage-bestDeals-cards .productListAction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+  }
+  .homepage-bestDeals-cards .productListAction a {
+    color: #414141;
+  }
+  .homepage-brands {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .homepage-brands h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .homepage-brands-logos {
+    margin: 1.5rem 0 1.5rem 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*footer*/
+  .footer {
+    background-color: #d1d1d1;
+  }
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "reassurance" "contact" "social" "newsletter" "sitemapLink";
+    -ms-grid-columns: 100fr;
+        grid-template-columns: 100fr;
+  }
+  .footer-sitemapLink {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: sitemapLink;
+  }
+  .footer-reassurance {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: reassurance;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-reassurance .footer-reassurance-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-reassurance .footer-reassurance-cards div {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  .footer-contact {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: contact;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-sitemap {
+    display: none;
+  }
+  .footer-sitemap-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-newsletter {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: newsletter;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-newsletter h1 {
+    text-align: center;
+  }
+  .footer-social span {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: social;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-social h1 {
+    text-align: center;
+  }
+}
+
+/*tailles d'écran entre 992px et 1200px*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75%;
+    height: auto;
+    margin: auto;
+  }
+  .global {
+    width: auto;
+    height: auto;
+    padding: 0 3% 0 3%;
+  }
+  .header .container, .homepage .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .header .logo-mobile, .homepage .logo-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-logo1 {
+    display: none;
+  }
+  .header-search a {
+    color: #414141;
+  }
+  .header-search a :hover {
+    color: #414141;
+  }
+  .header-search #inputSearch {
+    display: none;
+  }
+  /*homepage*/
+  /*grid*/
+  .homepage-grid {
+        grid-template-areas: "newCollection newCollection"  "tabouret sofa "  "whiteChair  banc"  "totemFloor greyChair";
+    -ms-grid-columns: 50fr 50fr;
+        grid-template-columns: 50fr 50fr;
+  }
+  .grid-newCollection {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: newCollection;
+  }
+  .grid-sofa {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: sofa;
+  }
+  .grid-banc {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: banc;
+  }
+  .grid-whiteChair {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: whiteChair;
+  }
+  .grid-greyChair {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: greyChair;
+  }
+  .grid-totemFloor {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: totemFloor;
+  }
+  .grid-tabouret {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: tabouret;
+  }
+  /*finish grid*/
+  .homepage-product-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.5rem;
+  }
+  .homepage-product-menu a {
+    color: #414141;
+    margin: 1rem;
+  }
+  .homepage-product-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .homepage-product-cards div {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    height: 50%;
+  }
+  .homepage-product-cards div figure {
+    margin: 0px;
+    /*
+                text-align: center;
+                padding: none;
+                width: 100%;
+                height: 100%;
+                */
+  }
+  .homepage-product-cards div figure img {
+    top: 0px;
+    left: 0px;
+    margin: none;
+    padding: none;
+    width: 100%;
+    height: 17.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homepage-product-cards div figcaption {
+    margin: 1rem 0 1rem 0;
+  }
+  .homepage-product-cards div figcaption a {
+    display: block;
+    color: #9b9b9b;
+  }
+  .homepage-product-cards div figcaption .price {
+    color: #414141;
+  }
+  .homepage-category {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1rem;
+        grid-template-areas: "horloge horloge" "palette lampe";
+    -ms-grid-columns: 50fr 50fr;
+        grid-template-columns: 50fr 50fr;
+    -ms-grid-rows: 50fr 50fr;
+        grid-template-rows: 50fr 50fr;
+    grid-auto-rows: 20rem;
+  }
+  .homepage-category .palette {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: palette;
+  }
+  .homepage-category .horloge {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: horloge;
+  }
+  .homepage-category .lampe {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: lampe;
+  }
+  .homepage-bestDeals {
+    width: 100%;
+  }
+  .homepage-bestDeals-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage-bestDeals-cards div {
+    -ms-flex-preferred-size: 18%;
+        flex-basis: 18%;
+  }
+  .homepage-bestDeals-cards div .img {
+    width: 100%;
+    height: 200px;
+  }
+  .homepage-bestDeals-cards .productListAction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+  }
+  .homepage-bestDeals-cards .productListAction a {
+    color: #414141;
+  }
+  .homepage-brands {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .homepage-brands h2 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .homepage-brands-logos {
+    margin: 1.5rem 0 1.5rem 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*footer*/
+  .footer {
+    background-color: #d1d1d1;
+  }
+  .footer .container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "reassurance reassurance" "contact  newsletter" "contact  social" "sitemap sitemap";
+    -ms-grid-columns: 50fr 50fr;
+        grid-template-columns: 50fr 50fr;
+  }
+  .footer-reassurance {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: reassurance;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-reassurance .footer-reassurance-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-contact {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: contact;
+  }
+  .footer-sitemap {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: sitemap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-sitemap-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-newsletter {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: newsletter;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer-social span {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: social;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footer-social h1 {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,1468 @@
+
+@font-face {
+    font-family: "Montserrat";
+    src: 
+    url('../font/Montserrat/Montserrat-Medium.ttf') format('ttf'),
+    url('../font/Montserrat/Montserrat-Black.ttf') format('ttf'),
+    url('../font/Montserrat/Montserrat-BlackItalic.ttf') format('ttf'),
+    url('../font/Montserrat/Montserrat-Bold.ttf') format('ttf'),
+    url('../font/Montserrat/Montserrat-Italic.ttf') format('ttf'),
+    url('../font/Montserrat/Montserrat-Light.ttf') format('ttf') ;
+}
+
+div,p,a,h1,h2,h3 {
+    /*Mettre du Montserrat à la place*/
+    font-family: Arial, Helvetica, sans-serif;
+    }
+//variables
+
+//couleurs
+$white:aliceblue;
+$lightGrey:rgb(209, 209, 209);
+$grey: rgb(155, 155, 155);
+$darkGrey: rgb(65, 65, 65);
+$dark: rgb(14, 14, 14);
+$red:rgb(139, 1, 1);
+
+.pDark {
+    color: $dark;
+}
+.pDarkGrey {
+    color:$darkGrey;
+}
+.pWhite {
+    color: $white;
+}
+.pGrey {
+    color: $grey;
+}
+
+
+//dimensions
+$h1: 3rem;
+$h2: 2rem;
+$h3: 1.8rem;
+
+.h1{
+    font-size: $h1;
+}
+.h2{
+    font-size: $h2;
+}
+.h3 {
+    font-size: $h3;
+}
+
+$p1: 1.6rem;
+$p2: 1.4rem;
+$p3: 1rem;
+
+p {
+    color: $white;
+    opacity: 80%;
+    font-size: $p3;
+}
+
+.p1 {
+    font-size: $p1;
+}
+
+.p2 {
+    font-size: $p2;
+}
+
+.p3 {
+    font-size: $p3;
+}
+
+
+$gap:1rem;
+
+$mediumGap:1.5rem;
+
+$bigGap:2rem;
+
+.padding{
+    padding:$gap;
+}
+
+.mediumPadding{
+    padding: $mediumGap;
+}
+
+.bigPadding {
+    padding: $bigGap;
+}
+
+$containerWidth:75%;
+
+//code scss
+
+//éléments 
+
+.littleIcon{
+    font-size: $p2;
+}
+
+.bigIcon {
+    font-size : $h2;
+}
+
+.fatIcon {
+    font-size: $h1;
+}
+
+i{
+    display: inline;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    :hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-block-start:  0px;
+    margin-block-end:  0px;
+    margin-inline-start:  0px;
+    margin-inline-end: 0px;
+    padding-inline-start:  0px;
+}
+
+li {
+    list-style: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.light {
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.price {
+    font-size: $p2;
+}
+
+.pastPrice {
+    text-decoration:  line-through;
+}
+
+.pushToAction {
+
+}
+
+.bubbleReduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgb(1, 216, 216);
+}
+
+.img {
+    background-position: center;
+    background-size: cover;
+}
+//zoning
+
+
+.container {
+    display: flex;
+    width: $containerWidth;
+    height: auto;
+    margin: auto;
+}
+
+.global {
+    width:auto;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.preHeader {
+    background-color: $dark;
+    color: $white;
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: $white;
+            padding: auto;
+            margin: 0.2rem;
+            
+            :hover {
+                background-color: $darkGrey;
+            }
+    
+        }
+
+
+        .preHeader-contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .preHeader-contact-phone {
+                background-color: $darkGrey;
+            }
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+    }
+
+
+}
+
+
+.preHeader-account {
+    background-color: $darkGrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: $white;
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-mobile{
+        display: none;
+    }
+}
+
+.header-logo1 {
+    width: 10rem;
+    img {
+    width: 100%;
+    }
+}
+
+.header-search {
+    a {
+        color: $darkGrey;
+        :hover{
+            color: $darkGrey;
+        }
+
+    }
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+    li{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        a {
+            color: $dark;
+            :hover {
+                color: $dark;
+            }
+        }
+    }
+}
+.header-shoppingCart a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 0.25;
+    color: $darkGrey;
+    :hover{
+        color: $darkGrey;
+    }
+    p {
+        display: inline;
+    }
+
+
+}
+
+.header-search {
+    #inputSearch {
+        display: none;
+    }
+}
+
+/*homepage*/
+
+.homepage {
+    @extend .header;
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+/*grid*/
+
+.homepage-grid {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-areas:
+    "newCollection newCollection  sofa  banc"
+
+    "newCollection newCollection sofa whiteChair"
+
+    "greyChair tabouret tabouret  tabouret"
+
+    "totemFloor tabouret tabouret  tabouret";
+
+    grid-template-columns: 33fr 17fr 25fr 25fr;
+
+}
+
+.homepage-grid {
+}
+
+
+
+.grid-newCollection {
+    background-image: url("../img/images/meubles/nouvellecollection.jpg");
+    grid-area: newCollection;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    color: $white;
+}
+
+.grid-sofa {
+    background-image: url("../img/images/meubles/canape3places.jpg");
+    grid-area: sofa; 
+
+    color: $white;
+}
+
+.grid-banc {
+    background-image: url("../img/images/meubles/coussinsblancs.jpg");
+    grid-area: banc;
+
+    color: $dark;
+    .price {
+        color: $red;
+    }
+    .pushToAction {
+        color: $white;
+        background-color: $dark;
+    }
+}
+
+.grid-whiteChair {
+    background-image: url("../img/images/meubles/chaise-accourdoirs.jpg");
+    grid-area: whiteChair;
+
+    color: $dark;
+}
+
+.grid-greyChair {
+    background-image: url("../img/images/meubles/ziodinning.jpg");
+    background-color: aquamarine;
+    grid-area: greyChair;
+
+    color:$white;
+
+    a {
+        color:$white;
+        :hover {
+            color: $white;
+        }
+    }
+}
+
+.grid-totemFloor {
+    background-image: url("../img/images/meubles/totemfloor.jpg");
+    grid-area: totemFloor;
+
+    color: $grey;
+
+    .pushToAction {
+        color: $grey;
+    }
+}
+
+.grid-tabouret {
+    background-image: url("../img/images/meubles/tabouret.jpg");
+    grid-area: tabouret;
+
+    color: $grey;
+}
+
+
+/*finish grid*/
+
+.homepage-product {
+
+}
+
+.homepage-product-menu {
+    padding: $mediumGap;
+    a {
+        color: $darkGrey;
+        margin: $gap;
+
+    }
+}
+
+.homepage-product-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+
+    div {
+        flex-basis: 23%;
+        height: 50%;
+        figure {
+            margin: 0px;
+            /*
+            text-align: center;
+            padding: none;
+            width: 100%;
+            height: 100%;
+            */
+            img {
+                top: 0px;
+                left: 0px;
+                margin: none;
+                padding: none;
+                width:100%;
+                height: 17.5rem;
+                object-fit: cover;
+            }
+        }
+        figcaption {
+            margin: $gap 0 $gap 0;
+            a {
+                display: block;
+                color:$grey;
+            }
+            .price{
+                color:$darkGrey; 
+            }
+        }
+    }
+
+
+}
+
+.homepage-category{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "horloge palette lampe";
+    grid-template-columns: 33.33fr 33.33fr 33.33fr;
+    grid-auto-rows: 20rem;
+
+    .palette{
+        grid-area: palette;
+        height: 4000px;
+    }
+    .horloge{
+        grid-area: horloge;
+    }
+    .lampe{
+        grid-area: lampe;
+    }
+}
+
+.homepage-bestDeals {
+    width: 100%;
+}
+.homepage-bestDeals-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    div{
+        flex-basis: 18%;
+
+        .img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .productListAction{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin: $gap 0 $gap 0;
+        a {
+            color: $darkGrey;
+        }
+    }
+}
+.homepage-brands{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h2{
+        align-self: flex-start;
+    }
+}
+.homepage-brands-logos{
+    margin: $mediumGap 0 $mediumGap 0;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*footer*/
+
+
+.footer {
+    background-color: $lightGrey;
+
+    .container {
+        display: grid;
+        grid-template-areas:
+        "reassurance reassurance  reassurance"
+        "contact sitemap newsletter"
+        "contact sitemap social";
+        grid-template-columns: 25fr 50fr 25fr;
+    }
+}
+
+.footer-reassurance {
+    grid-area: reassurance;
+
+    margin: $gap 0 $gap 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-reassurance-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        div{
+            text-align: center;
+        }
+        h3,h1,h2{
+            font-size: $p3;
+        }
+        p{
+            font-size: 0.8rem;;
+        }
+    }
+}
+
+.footer-contact {
+    grid-area: contact;
+    a {
+        color: $grey;
+        :hover{
+            color: $darkGrey
+        }
+    }
+}
+
+.footer-sitemap {
+    grid-area: sitemap;
+
+    margin: 0 $gap 0 $gap ;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+        a {
+            color: $grey;
+            :hover{
+                color: $darkGrey
+            }
+        }
+    }
+
+}
+.footer-sitemap-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    h1,ul {
+        display: inline-block;
+    }
+}
+
+.footer-newsletter {
+    grid-area: newsletter;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-social {
+    span {
+        grid-area: social;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    h1 {
+        text-align: right;
+    }
+
+}
+
+.subFooter {
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.subFooter-credit{
+}
+
+.subFooter-payMethod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*tailles d'écran inférieur à 991px*/
+
+@media (max-width: 991px){
+    .container {
+        display: flex;
+        width: $containerWidth;
+        height: auto;
+        margin: auto;
+    }
+    
+    .global {
+        width:auto;
+        height: auto;
+        padding:0 3% 0 3%;
+    }
+
+    .preHeader {
+
+        .container {
+    
+            a{
+                :hover {
+                }
+        
+            }
+    
+    
+            .preHeader-contact {
+               .preHeader-contact-phone {
+                }
+                div {
+                }
+            }
+    
+        }
+    
+    
+    }
+    
+    
+    .preHeader-account {
+    }
+    
+    .header {
+        .container {
+            flex-wrap: wrap;
+            overflow: hidden;        
+        }
+        .logo-mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    .header-logo1 {
+        display: none;
+
+    }
+    
+    .header-search {
+        a {
+            color: $darkGrey;
+            :hover{
+                color: $darkGrey;
+            }
+    
+        }
+    }
+    
+    .navbar-nav{
+    
+        li{
+            a {
+
+                :hover {
+                }
+            }
+        }
+    }
+    .header-shoppingCart a{
+
+        :hover{
+
+        }
+        p {
+        }
+    
+    
+    }
+    
+    .header-search {
+        #inputSearch {
+            display: none;
+        }
+    }
+    
+    /*homepage*/
+    
+    .homepage {
+        .container{
+        }
+    }
+    
+    
+    /*grid*/
+    
+    .homepage-grid {
+        grid-template-areas:
+        "newCollection newCollection"
+    
+        "tabouret sofa "
+    
+        "whiteChair  banc"
+    
+        "totemFloor greyChair";
+    
+        grid-template-columns: 50fr 50fr;
+    
+    }
+    
+    .homepage-grid {
+    }
+    
+    
+    
+    .grid-newCollection {
+        grid-area: newCollection;
+    }
+    
+    .grid-sofa {
+        grid-area: sofa; 
+    }
+    
+    .grid-banc {
+        grid-area: banc;
+        .price {
+        }
+        .pushToAction {
+        }
+    }
+    
+    .grid-whiteChair {
+        grid-area: whiteChair;
+    }
+    
+    .grid-greyChair {
+        grid-area: greyChair;
+        a {
+
+            :hover {
+            }
+        }
+    }
+    
+    .grid-totemFloor {
+        grid-area: totemFloor;
+    
+        .pushToAction {
+        }
+    }
+    
+    .grid-tabouret {
+        grid-area: tabouret;
+    }
+    
+    
+    /*finish grid*/
+    
+    .homepage-product {
+    
+    }
+    
+    .homepage-product-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: $mediumGap;
+
+        a {
+            color: $darkGrey;
+            margin: $gap;
+    
+        }
+    }
+    
+    .homepage-product-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    
+        div {
+            flex-basis: 23%;
+            height: 50%;
+            figure {
+                margin: 0px;
+                /*
+                text-align: center;
+                padding: none;
+                width: 100%;
+                height: 100%;
+                */
+                img {
+                    top: 0px;
+                    left: 0px;
+                    margin: none;
+                    padding: none;
+                    width:100%;
+                    height: 17.5rem;
+                    object-fit: cover;
+                }
+            }
+            figcaption {
+                margin: $gap 0 $gap 0;
+                a {
+                    display: block;
+                    color:$grey;
+                }
+                .price{
+                    color:$darkGrey; 
+                }
+            }
+        }
+    
+    
+    }
+    
+    .homepage-category{
+        width: 100%;
+        display: grid;
+        grid-gap: $gap;
+        grid-template-areas: 
+        "horloge horloge"
+        "palette lampe";
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: 50fr 50fr;
+        grid-auto-rows: 20rem; //ne fonctionn pas !!!
+
+        .palette{
+            grid-area: palette;
+        }
+        .horloge{
+            grid-area: horloge;
+        }
+        .lampe{
+            grid-area: lampe;
+        }
+    }
+    .homepage-bestDeals {
+        width: 100%;
+    }
+    .homepage-bestDeals-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    
+        div{
+            flex-basis: 18%;
+    
+            .img{
+                width: 100%;
+                height: 200px;
+            }
+        }
+        .productListAction{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            margin: $gap 0 $gap 0;
+            a {
+                color: $darkGrey;
+            }
+        }
+    }
+    .homepage-brands{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h2{
+            align-self: flex-start;
+        }
+    }
+    .homepage-brands-logos{
+        margin: $mediumGap 0 $mediumGap 0;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /*footer*/
+    
+    
+    .footer {
+        background-color: $lightGrey;
+    
+        .container {
+            display: grid;
+            grid-template-areas:
+            "reassurance"
+            "contact"
+            "social"
+            "newsletter"
+            "sitemapLink";
+            grid-template-columns: 100fr;
+        }
+    }
+
+    .footer-sitemapLink{
+        grid-area: sitemapLink;
+    }
+    
+    .footer-reassurance {
+        grid-area: reassurance;
+        flex-direction: column;
+
+    
+        .footer-reassurance-cards {
+            flex-direction: row;
+            justify-content: space-between;
+    
+            div{
+                margin: 0 $mediumGap 0 $mediumGap;
+            }
+            h3,h1,h2{
+            }
+            p{
+            }
+        }
+    }
+    
+    .footer-contact {
+        grid-area: contact;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            :hover{
+            }
+        }
+    }
+    
+    .footer-sitemap {
+        display: none;
+    }
+    .footer-sitemap-child{
+        justify-content: flex-start;
+        align-items: center;
+        h1,ul {
+        }
+    }
+    
+    .footer-newsletter {
+        grid-area: newsletter;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            text-align: center;
+        }
+    
+    }
+    
+    .footer-social {
+        span {
+            grid-area: social;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+        }
+    
+    }
+    
+    .subFooter {
+        .container{
+        }
+    }
+    
+    .subFooter-credit{
+    }
+    
+    .subFooter-payMethod{
+    }
+
+}
+
+/*tailles d'écran entre 992px et 1200px*/
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        display: flex;
+        width: $containerWidth;
+        height: auto;
+        margin: auto;
+    }
+    
+    .global {
+        width:auto;
+        height: auto;
+        padding:0 3% 0 3%;
+    }
+
+    .preHeader {
+
+        .container {
+    
+            a{
+                :hover {
+                }
+        
+            }
+    
+    
+            .preHeader-contact {
+               .preHeader-contact-phone {
+                }
+                div {
+                }
+            }
+    
+        }
+    
+    
+    }
+    
+    
+    .preHeader-account {
+    }
+    
+    .header {
+        .container {
+            flex-wrap: wrap;
+            overflow: hidden;        
+        }
+        .logo-mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    .header-logo1 {
+        display: none;
+
+    }
+    
+    .header-search {
+        a {
+            color: $darkGrey;
+            :hover{
+                color: $darkGrey;
+            }
+    
+        }
+    }
+    
+    .navbar-nav{
+    
+        li{
+            a {
+
+                :hover {
+                }
+            }
+        }
+    }
+    .header-shoppingCart a{
+
+        :hover{
+
+        }
+        p {
+        }
+    
+    
+    }
+    
+    .header-search {
+        #inputSearch {
+            display: none;
+        }
+    }
+    
+    /*homepage*/
+    
+    .homepage {
+        .container{
+        }
+    }
+    
+    
+    /*grid*/
+    
+    .homepage-grid {
+        grid-template-areas:
+        "newCollection newCollection"
+    
+        "tabouret sofa "
+    
+        "whiteChair  banc"
+    
+        "totemFloor greyChair";
+    
+        grid-template-columns: 50fr 50fr;
+    
+    }
+    
+    .homepage-grid {
+    }
+    
+    
+    
+    .grid-newCollection {
+        grid-area: newCollection;
+    }
+    
+    .grid-sofa {
+        grid-area: sofa; 
+    }
+    
+    .grid-banc {
+        grid-area: banc;
+        .price {
+        }
+        .pushToAction {
+        }
+    }
+    
+    .grid-whiteChair {
+        grid-area: whiteChair;
+    }
+    
+    .grid-greyChair {
+        grid-area: greyChair;
+        a {
+
+            :hover {
+            }
+        }
+    }
+    
+    .grid-totemFloor {
+        grid-area: totemFloor;
+    
+        .pushToAction {
+        }
+    }
+    
+    .grid-tabouret {
+        grid-area: tabouret;
+    }
+    
+    
+    /*finish grid*/
+    
+    .homepage-product {
+    
+    }
+    
+    .homepage-product-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: $mediumGap;
+
+        a {
+            color: $darkGrey;
+            margin: $gap;
+    
+        }
+    }
+    
+    .homepage-product-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    
+        div {
+            flex-basis: 23%;
+            height: 50%;
+            figure {
+                margin: 0px;
+                /*
+                text-align: center;
+                padding: none;
+                width: 100%;
+                height: 100%;
+                */
+                img {
+                    top: 0px;
+                    left: 0px;
+                    margin: none;
+                    padding: none;
+                    width:100%;
+                    height: 17.5rem;
+                    object-fit: cover;
+                }
+            }
+            figcaption {
+                margin: $gap 0 $gap 0;
+                a {
+                    display: block;
+                    color:$grey;
+                }
+                .price{
+                    color:$darkGrey; 
+                }
+            }
+        }
+    
+    
+    }
+    
+    .homepage-category{
+        width: 100%;
+        display: grid;
+        grid-gap: $gap;
+        grid-template-areas: 
+        "horloge horloge"
+        "palette lampe";
+        grid-template-columns: 50fr 50fr;
+        grid-template-rows: 50fr 50fr;
+        grid-auto-rows: 20rem; //ne fonctionn pas !!!
+
+        .palette{
+            grid-area: palette;
+        }
+        .horloge{
+            grid-area: horloge;
+        }
+        .lampe{
+            grid-area: lampe;
+        }
+    }
+    .homepage-bestDeals {
+        width: 100%;
+    }
+    .homepage-bestDeals-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    
+        div{
+            flex-basis: 18%;
+    
+            .img{
+                width: 100%;
+                height: 200px;
+            }
+        }
+        .productListAction{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            margin: $gap 0 $gap 0;
+            a {
+                color: $darkGrey;
+            }
+        }
+    }
+    .homepage-brands{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h2{
+            align-self: flex-start;
+        }
+    }
+    .homepage-brands-logos{
+        margin: $mediumGap 0 $mediumGap 0;
+    
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /*footer*/
+    
+    
+    .footer {
+        background-color: $lightGrey;
+    
+        .container {
+            display: grid;
+            grid-template-areas:
+            "reassurance reassurance"
+            "contact  newsletter"
+            "contact  social"
+            "sitemap sitemap";
+            grid-template-columns: 50fr 50fr;
+        }
+    }
+    
+    .footer-reassurance {
+        grid-area: reassurance;
+        flex-direction: row;
+
+    
+        .footer-reassurance-cards {
+            flex-direction: row;
+            justify-content: space-between;
+    
+            div{
+            }
+            h3,h1,h2{
+            }
+            p{
+            }
+        }
+    }
+    
+    .footer-contact {
+        grid-area: contact;
+        a {
+            :hover{
+            }
+        }
+    }
+    
+    .footer-sitemap {
+        grid-area: sitemap;
+
+        flex-direction: row;
+        justify-content: space-between;
+    
+        li {
+            a {
+                :hover{
+                }
+            }
+        }
+    
+    }
+    .footer-sitemap-child{
+        justify-content: flex-start;
+        align-items: center;
+        h1,ul {
+        }
+    }
+    
+    .footer-newsletter {
+        grid-area: newsletter;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    
+    }
+    
+    .footer-social {
+        span {
+            grid-area: social;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        h1 {
+            text-align: right;
+        }
+    
+    }
+    
+    .subFooter {
+        .container{
+        }
+    }
+    
+    .subFooter-credit{
+    }
+    
+    .subFooter-payMethod{
+    }
+}
