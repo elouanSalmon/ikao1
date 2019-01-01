@@ -13,6 +13,14 @@
 </head>
 
 <body>
+
+    <div class="mobileCache">
+        <div class="mobileCache-content">
+            <img src="./img/images/logos/logo.png" alt="">
+            <p class="p1">Retournez votre téléphone !</p>
+        </div>
+    </div>
+
     <div class="global preHeader">
         <div class="container">
             <div class="preHeader-contact">
@@ -31,7 +39,7 @@
         </div>
     </div>
 
-    <div class="global header">
+    <div class="global header" id="main-header">
 
         <div class="container logo-mobile">
             <div class="header-logo2">
@@ -40,13 +48,13 @@
                 </a>
             </div>
         </div>
-        <div class="container">
+        <div class="container header-main">
             <div class="header-logo1">
                 <a href="#">
                     <img src="./img/images/logos/logo.png" alt="Logo Ikao">
                 </a>
             </div>
-            <div class="header-navbar">
+            <div class="header-menu">
                 <ul class="nav navbar-nav">
                     <li class="active">
                         <a href="#">Accueil</a>
@@ -83,6 +91,14 @@
                     </div>
                 </a>
             </div>
+            <div class="header-toogle">
+                <a href="#main-header" class="header-toogle-open">
+                    <img src="./img/images/menu.png" width="30" alt="Ouvrir Menu">
+                </a>
+                <a href="#" class="header-toogle-close">
+                    <img src="./img/images/close.png" width="30" alt="Fermer Menu">
+                </a>
+            </div>
 
         </div>
     </div>
@@ -91,63 +107,75 @@
         <div class="container">
             <div class="homepage-grid">
 
-                <div class="grid-newCollection img mediumPadding">
+                <div class="grid-newCollection img mediumPadding imgContrast">
                     <div class="whiteText">
-                        <h1 class="capitalize">idées design 2017</h1>
+                        <h1 class="uppercase">idées design 2017</h1>
                         <h2 class="bold"> <strong>Nouvelle</strong></br> Collection</h2>
                         <p class="p3">Votre intérieur sera le plus beau </br>Même à la TV c'est pas si beau !</p>
                         <h2 class="price">79 €</h2>
                     </div>
                 </div>
 
-                <div class="grid-sofa img padding">
-                    <h2 class="capitalize p2">canapé - fauteuil</h2>
-                    <h2 class="bold p1">Canapé 3 places en cuir</h2>
-                    <a href="#" class="p2"></i>Acheter<i class="icon-next"></i></a>
-                    <div class="bubbleReduction">
-                        <p class="pastPrice p3">659 €</p>
-                        <h2 class="price p2">499 €</h2>
+                <div class="grid-sofa img padding imgContrast">
+                    <div>
+                        <h2 class="uppercase p2">canapé - fauteuil</h2>
+                        <h2 class="bold p1">Canapé 3 places en cuir</h2>
+                        <a href="#" class="p3 pWhite"></i>Acheter<i class="icon-next"></i></a>
+                        <div class="bubbleReduction">
+                            <p class="pastPrice p3">659 €</p>
+                            <h2 class="price p2">499 €</h2>
+                        </div>
                     </div>
                 </div>
-                <div class="grid-banc img padding">
-                    <h2 class="capitalize bold p2">banc blanc</h2>
-                    <h2 class="bold p2">Avec coussins</h2>
-                    <p class="price p2">99,00€</p>
-                    <a href="" class="capitalize p3">Acheter</a>
+                <div class="grid-banc img padding imgContrast">
+                    <div>
+                        <h2 class="uppercase bold p2">banc blanc</h2>
+                        <h2 class="bold p2">Avec coussins</h2>
+                        <p class="price p2">99,00€</p>
+                        <a href="" class="uppercase p3 pushToAction">Acheter</a>
+                    </div>
                 </div>
-                <div class="grid-whiteChair img padding">
-                    <h2 class="bold capitalize p2">chaise et accourdoirs</h2>
-                    <h2 class="pastPrice p3">129 €</h2>
-                    <h2 class="price p1">99 €</h2>
-                    <a href="" class="pushToAction p2">Vite j'en profite<i class="icon-next"></i></a>
-                </div>
-
-                <div class="grid-greyChair img padding">
-                    <h1 class="p3">Chaise</h1>
-                    <h2 class="capitalize bold p2">zio dining</h2>
-                    <a href="" class="pushToAction p3">Acheter<i class="icon-next"></i></a>
+                <div class="grid-whiteChair img padding imgContrast">
+                    <div>
+                        <h2 class="bold uppercase p2">chaise et accourdoirs</h2>
+                        <h2 class="pastPrice p3 pGrey">129 €</h2>
+                        <h2 class="price p1">99 €</h2>
+                        <a href="" class="pushToAction pGrey p2">Vite j'en profite<i class="icon-next"></i></a>
+                    </div>
                 </div>
 
-                <div class="grid-totemFloor img padding">
-                    <h1 class="p3">Lampe / accessoires</h1>
-                    <h2 class="capitalize bold p2">TOTEM FLOOR</h2>
-                    <a href="" class="light pushToAction p3">Acheter <i class="icon-next"></i></a>
+                <div class="grid-greyChair img padding imgContrast">
+                    <div>
+                        <h1 class="p3">Chaise</h1>
+                        <h2 class="uppercase bold p2">zio dining</h2>
+                        <a href="" class="pushToAction p3">Acheter<i class="icon-next"></i></a>
+                    </div>
                 </div>
 
-                <div class="grid-tabouret img mediumPadding">
-                    <h1 class="capitalize p3">Prix design 2017 bar</h1>
-                    <h2 class="h1">
-                        <b>Tissu rembouré</b></br>
-                        <span class="light">Cool le tabouret</span>
-                    </h2>
-                    <p class="p3">
-                        Vos fesses n'auront jamais eu autant d'amour ...
-                    </p>
+                <div class="grid-totemFloor img padding imgContrast">
+                    <div>
+                        <h1 class="p3">Lampe / accessoires</h1>
+                        <h2 class="uppercase bold p2">TOTEM FLOOR</h2>
+                        <a href="" class="light pushToAction p3">Acheter <i class="icon-next icon-next-white"></i></a>
+                    </div>
+                </div>
+
+                <div class="grid-tabouret img mediumPadding imgContrast imgDesaturate">
+                    <div>
+                        <h1 class="uppercase p3">Prix design 2017 bar</h1>
+                        <h2 class="h1">
+                            <b>Tissu rembouré</b></br>
+                            <span class="light">Cool le tabouret</span>
+                        </h2>
+                        <p class="p3 pDarkGrey">
+                            Vos fesses n'auront jamais eu autant d'amour ...
+                        </p>
+                    </div>
                 </div>
 
             </div>
             <div class="homepage-product">
-                <div class="product-menu capitalize pGrey">
+                <div class="product-menu uppercase pGrey">
                     <a href="">En ce moment</a>
                     <a href="">Recents</a>
                     <a href="">Meilleures ventes</a>
@@ -185,6 +213,7 @@
                     <div class="product-card">
                         <div class="product-card-img img" style="background-image:url(./img/images/meubles/chairarmrests.png)"
                             alt="chair armests">
+                            <span class="new">new</span>
                             <div class="product-card-actions">
                                 <a href="#" title="Acheter"><i class="icon-paper-bag"></i>Acheter</a>
                                 <a href="#" title="Mettre en favoris"><i class="icon-heart"></i></a>
@@ -218,32 +247,39 @@
             </div>
 
             <div class="homepage-category">
-                <div class="img horloge" style="background-image:url(./img/images/meubles/horloges.png)">
-                    <h1 class="pGrey">Décoration</h1>
-                    <h2 class="pDarkGrey">Horloges</h2>
-                    <a href="" class="pushToAction">Voir<i class="icon-next"></i></a>
+                <div class="img horloge imgContrast" style="background-image:url(./img/images/meubles/horloges.png)">
+                    <div class="homepage-category-text">
+                        <h1 class="p3 pGrey">Décoration</h1>
+                        <h2 class="pDarkGrey">Horloges</h2>
+                        <a href="" class="pushToAction pGrey">Voir<i class="icon-next"></i></a>
+                    </div>
                 </div>
 
-                <div class="img Palette" style="background-image:url(./img/images/meubles/tablebase.jpg)">
-                    <h1 class="pGrey">Tables basses</h1>
-                    <h2 class="pDarkGrey">Palettes paillettes</h2>
-                    <a href="" class="pushToAction"><i class="icon-next"></i></a>
+                <div class="img Palette imgContrast" style="background-image:url(./img/images/meubles/tablebase.jpg)">
+                    <div class="homepage-category-text">
+                        <h1 class="pGrey p3">Tables basses</h1>
+                        <h2 class="pDarkGrey">Palettes paillettes</h2>
+                        <a href="" class="pushToAction pGrey">Voir<i class="icon-next icon-next-white"></i></a>
+                    </div>
                 </div>
-                <div class="img lampe" style="background-image:url(./img/images/meubles/lampes.png)">
-                    <h1 class="pGrey">Lampes</h1>
-                    <h2 class="pDarkGrey">Que la lumière soit</h2>
-                    <a href="" class="pushToAction">Voir<i class="icon-next"></i></a>
+                <div class="img lampe imgContrast" style="background-image:url(./img/images/meubles/lampes.png)">
+                    <div class="homepage-category-text">
+                        <h1 class="uppercase p3 pWhite">Lampes</h1>
+                        <h2 class="pDarkGrey">Que la lumière soit</h2>
+                        <a href="" class="pushToAction pGrey">Voir<i class="icon-next icon-next-white"></i></a>
+                    </div>
                 </div>
             </div>
 
             <div class="homepage-bestDeals">
-                <h1 class="pDarkGrey capitalize">
+                <h1 class="pDarkGrey h3 uppercase">
                     Meilleurs ventes
                 </h1>
                 <!--homepage-bestDeals-cards-->
                 <div class=" product-cards">
                     <div class="product-card">
-                        <div class="product-card-img img" style="background-image:url(./img/images/meubles/bombichair1.png)">
+                        <div class="product-card-img img" style="background-image:url(./img/images/meubles/puffchair.jpg)">
+                            <span class="new">new</span>
                             <div class="product-card-actions">
                                 <a href="#" title="Acheter"><i class="icon-paper-bag"></i>Acheter</a>
                                 <a href="#" title="Mettre en favoris"><i class="icon-heart"></i></a>
@@ -251,7 +287,7 @@
                             </div>
                         </div>
                         <span class="product-card-legend">
-                            <strong>Bomby chair new version</strong>
+                            <strong>Puff chair</strong>
                             <span>599,00 €</span>
                         </span>
                     </div>
@@ -297,6 +333,8 @@
                     </div>
                     <div class="product-card">
                         <div class="product-card-img img" style="background-image:url(./img/images/meubles/bombichair.png)">
+                            <span class="new">new</span>
+                            <span class="reduction">15%</span>
                             <div class="product-card-actions">
                                 <a href="#" title="Acheter"><i class="icon-paper-bag"></i>Acheter</a>
                                 <a href="#" title="Mettre en favoris"><i class="icon-heart"></i></a>
@@ -326,7 +364,7 @@
             </div>
 
             <div class="homepage-brands">
-                <h2 class="darkGrey h2">Suedois et pas que</h2>
+                <h2 class="darkGrey h3">Suedois et pas que</h2>
                 <div class="homepage-brands-logos">
                     <img src="./img/images/logos/logo1.jpg" alt="">
                     <img src="./img/images/logos/logo2.jpg" alt="">
@@ -345,28 +383,28 @@
                 <div class="footer-reassurance-cards">
                     <i class="fatIcon icon-plane pGrey"></i>
                     <div>
-                        <h1 class="pDarkGrey pCapitalize">Livraison offerte</h1>
+                        <h1 class="pDarkGrey puppercase">Livraison offerte</h1>
                         <p class="pGrey">Pour toute commande</p>
                     </div>
                 </div>
                 <div class="footer-reassurance-cards pGrey">
                     <i class="icon-help-lifeguard-symbol  fatIcon"></i>
                     <div>
-                        <h1 class="pDarkGrey pCapitalize">Support 24/7</h1>
+                        <h1 class="pDarkGrey puppercase">Support 24/7</h1>
                         <p class="pGrey">Un problème ? Pas de problème</p>
                     </div>
                 </div>
                 <div class="footer-reassurance-cards">
                     <i class="icon-dropbox-logo fatIcon pGrey"></i>
                     <div>
-                        <h1 class="pDarkGrey pCapitalize">Carte cadeaux</h1>
+                        <h1 class="pDarkGrey puppercase">Carte cadeaux</h1>
                         <p class="pGrey">Pour faire plaisir</p>
                     </div>
                 </div>
                 <div class="footer-reassurance-cards">
                     <i class="icon-paper-bill fatIcon pGrey"></i>
                     <div>
-                        <h1 class="pDarkGrey pCapitalize">Securité</h1>
+                        <h1 class="pDarkGrey puppercase">Securité</h1>
                         <p class="pGrey">Paiement 100% sécurisé</p>
                     </div>
                 </div>
@@ -374,17 +412,17 @@
 
             <div class="footer-contact pGrey">
                 <img src="./img/images/logos/logo.png" alt="">
-                <h1 class="p2">Les meubles Ikea, mais en mieux</h1>
-                <i class=" icon-placeholder-filled-point littleIcon"></i>
-                <h1 class="p2">Quelque part en France, près de Lens</h1>
-                <i class=" icon-phone-receiver littleIcon"></i><a href="tel:+330619067020">+330619067020</a>
-                <i class="icon-mail littleIcon"></i><a href="mailto:job@elouan.ovh">job@elouan.ovh</a>
+                <h1 class="p3">Les meubles Ikea, mais en mieux</h1>
+                <h1 class="p3"><i class=" icon-placeholder-filled-point"></i>Quelque part en France,
+                    près de Lens</h1>
+                <a href="tel:+330619067020"><i class=" icon-phone-receiver "></i>+330619067020</a>
+                <a href="mailto:job@elouan.ovh"><i class="icon-mail "></i>job@elouan.ovh</a>
             </div>
 
             <div class="footer-sitemap">
                 <div class="footer-sitemap-child">
                     <a href="">
-                        <h1 class="pDarkGrey">Categorie</h1>
+                        <h1 class=" h3 pDarkGrey">Categorie</h1>
                     </a>
                     <ul class="pGrey">
                         <li><a href="#">Chaises</a></li>
@@ -397,7 +435,7 @@
                 </div>
 
                 <div class="footer-sitemap-child">
-                    <h1 class="pDarkGrey">Information</h1>
+                    <h1 class=" h3 pDarkGrey">Information</h1>
                     <ul class="pGrey">
                         <li><a href="#">A propos</a></li>
                         <li><a href="#">Contact</a></li>
@@ -409,7 +447,7 @@
 
                 <div class="footer-sitemap-child">
                     <a href="">
-                        <h1 class="pDarkGrey">Compte</h1>
+                        <h1 class=" h3 pDarkGrey">Compte</h1>
                     </a>
                     <ul class="pGrey">
                         <li><a href="#">Mon compte</a></li>
@@ -421,13 +459,13 @@
             </div>
             <div class="footer-newsletter">
                 <form action="">
-                    <h1 class="pDarkGrey">Newsletter</h1>
-                    <input type="text">
-                    <input type="submit" value="">
+                    <h1 class="h3 pDarkGrey">Newsletter</h1>
+                    <input type="text" id="newsletter-text" placeholder="Votre email">
+                    <input type="submit" id='newsletter-souscrire' value="Souscrire">
                 </form>
             </div>
             <div class="footer-social littleIcon">
-                <h1 class="pDarkGrey h2">Nous suivre</h1>
+                <h1 class="pDarkGrey h3">Nous suivre</h1>
                 <span>
                     <i class="pGrey  icon-youtube-logo"></i>
                     <i class="pGrey  icon-twitter-logo-silhouette"></i>
@@ -439,7 +477,7 @@
 
             </div>
             <div class="footer-sitemapLink">
-                <a href="#" class="p1">Plan du site</a>
+                <a href="#" class="p1 pGrey">Voir le plan du site</a>
             </div>
         </div>
     </div>
